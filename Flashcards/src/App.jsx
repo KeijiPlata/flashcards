@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Flashcardspage from "./pages/Flashcardspage"
 
-export default function App() {
+function App() {
   return (
-    <h1 className="text-3xl font-bold underline bg-red-500">
-      Hello world!
-    </h1>
+  <BrowserRouter>
+     <Routes>
+        <Route path="/flashcards/" element={<Flashcardspage />} />
+      </Routes>
+  </BrowserRouter>
   )
 }
+
+export default App
