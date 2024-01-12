@@ -1,9 +1,18 @@
-import React from 'react'
+import { useState } from 'react'
+import ReactCardFlip from 'react-card-flip';
+import FrontCard from '../components/FrontCard';
+import BackCard from '../components/BackCard';
 
-export default function App() {
+export default function Flashcardspage() {
+const [flip, setFlip] = useState(false);
   return (
-    <h1 className="text-3xl font-bold underline bg-red-500">
-      Hello world!
-    </h1>
+   <div className='bg-red-500 h-screen w-full flex justify-center items-center'>
+         <ReactCardFlip isFlipped={flip}
+            flipDirection="horizontal">
+              <FrontCard setFlip={setFlip} flip={flip}/>
+              <BackCard setFlip={setFlip} flip={flip}/>
+                
+            </ReactCardFlip>
+   </div>
   )
 }
