@@ -1,0 +1,25 @@
+.swiper-button-prev {
+    --swiper-navigation-size: 2rem;
+  }
+  
+  .swiper-button-next {
+    --swiper-navigation-size: 2rem;
+  }
+  
+  @media (min-width: 640px) {
+    .swiper-button-prev {
+      --swiper-navigation-size: 2rem;
+    }
+    .swiper-button-next {
+      --swiper-navigation-size: 2rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .swiper-button-prev {
+      --swiper-navigation-size: 3rem;
+    }
+    .swiper-button-next {
+      --swiper-navigation-size: 3rem;
+    }
+  }
