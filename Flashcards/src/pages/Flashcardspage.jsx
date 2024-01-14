@@ -24,7 +24,7 @@ export default function Flashcardspage() {
   };
   return (
     <div className="h-screen w-full">
-      <div className="bg-red-500 h-full w-full flex justify-center items-center relative md:p-5 md:pt-10 pt-8">
+      <div className="bg-bgdark h-full w-full flex justify-center items-center relative md:p-5 md:pt-10 pt-8">
         <Swiper
           pagination={{
             type: "fraction",
@@ -59,11 +59,10 @@ export default function Flashcardspage() {
             </SwiperSlide>
           ))}
            <div className="swiper-pagination text-white md:bottom-6 bottom-10"></div>
-          <div className="flex justify-between absolute w-full h-12 px-4 md:bottom-7 bottom-8 text-5xl">
-            <div  className="swiper-button-prev text-green-500 md:left-32 left-10"></div>
-            <div  className="swiper-button-next text-blue-500 md:right-32 right-10"></div>
+          <div className="flex justify-between absolute w-full h-12 px-4 md:bottom-5 bottom-8 text-5xl">
+            <div  className="swiper-button-prev text-white md:left-32 left-10"></div>
+            <div  className="swiper-button-next text-white md:right-32 right-10"></div>
           </div>
-         
         </Swiper>
       </div>
     </div>
