@@ -9,7 +9,10 @@ export default {
       colors: {
         'bgdark':'#0a092d',
         'frdark':'#2e3856',
-      }
+      },
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif']
+      },
     },
   },
   plugins: [],

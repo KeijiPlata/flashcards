@@ -23,8 +23,9 @@ export default function Flashcardspage() {
     setFlips(newFlips);
   };
   return (
-    <div className="h-screen w-full">
-      <div className="bg-bgdark h-full w-full flex justify-center items-center relative md:p-5 md:pt-10 pt-8">
+    <div className="h-screen w-full font-poppins">
+      <div className="bg-bgdark h-full w-full flex flex-col justify-center items-center relative md:p-5 md:pt-10 pt-8 gap-5">
+        <h2 className="text-2xl text-white font-bold">Title of the reviewer</h2>
         <Swiper
           pagination={{
             type: "fraction",
@@ -44,7 +45,7 @@ export default function Flashcardspage() {
                 <ReactCardFlip
                   isFlipped={flips[index]}
                   flipDirection="horizontal"
-                  containerClassName="font-bold w-10/12 h-5/6"
+                  containerClassName="w-10/12 h-5/6"
                 >
                   <FrontCard
                     handleFlip={() => handleFlip(index)}
